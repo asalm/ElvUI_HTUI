@@ -21,5 +21,6 @@ A minimalistic Standalone ElvUI Layout for Healers and Casters.. probably
 
 ## Credits
 
-**Blazeflake** Templates 
+**Blazeflake** Templates, Inspiration
+**Benik** HealthBarTexture
 **Atwood** Media
