@@ -6,7 +6,8 @@
 ## RequiredDeps: ElvUI
 ## DefaultState: enabled
 
-layout.lua
+core.lua
 tags.lua
 sharedmedia.lua
 modules/unitframes.lua
+modules/layout.lua

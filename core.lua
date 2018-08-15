@@ -24,10 +24,10 @@ local EP = LibStub("LibElvUIPlugin-1.0")
 local mod = E:NewModule(HTUI, "AceHook-3.0", "AceEvent-3.0", "AceTimer-3.0");
 
 --This function will hold your layout settings
-local function SetupLayout(layout)
+--local function SetupLayout(layout)
 	--[[
 	--	PUT YOUR EXPORTED PROFILE/SETTINGS BELOW HERE
-	--]]
+	--
 
 	--LAYOUT GOES HERE
 
@@ -755,9 +755,7 @@ local function SetupLayout(layout)
 	
 	
 	
-
-	--[[
-		--If you want to modify the base layout according to
+-If you want to modify the base layout according to
 		-- certain conditions then this is how you could do it
 		if layout == "tank" then
 			--Make some changes to the layout posted above
@@ -769,15 +767,15 @@ local function SetupLayout(layout)
 	--]]
 
 
-	--[[
+	
 	--	This section at the bottom is just to update ElvUI and display a message
 	--]]
 	--Update ElvUI
-	E:UpdateAll(true)
+	--E:UpdateAll(true)
 	--Show message about layout being set
-	PluginInstallStepComplete.message = "Layout Set"
-	PluginInstallStepComplete:Show()
-end
+	--PluginInstallStepComplete.message = "Layout Set"
+	--PluginInstallStepComplete:Show()
+--end
 
 --This function is executed when you press "Skip Process" or "Finished" in the installer.
 local function InstallComplete()
@@ -811,13 +809,13 @@ local InstallerData = {
 			PluginInstallFrame.Desc1:SetText("These are the layouts that are available. Please click a button below to apply the layout of your choosing.")
 			PluginInstallFrame.Desc2:SetText("Importance: |cff07D400High|r")
 			PluginInstallFrame.Option1:Show()
-			PluginInstallFrame.Option1:SetScript("OnClick", function() SetupLayout("tank") end)
+			PluginInstallFrame.Option1:SetScript("OnClick", function() ns.SetupLayout("tank") end)
 			PluginInstallFrame.Option1:SetText("Tank")
 			PluginInstallFrame.Option2:Show()
-			PluginInstallFrame.Option2:SetScript("OnClick", function() SetupLayout("healer") end)
+			PluginInstallFrame.Option2:SetScript("OnClick", function() ns.SetupLayout("healer") end)
 			PluginInstallFrame.Option2:SetText("Healer")
 			PluginInstallFrame.Option3:Show()
-			PluginInstallFrame.Option3:SetScript("OnClick", function() SetupLayout("dps") end)
+			PluginInstallFrame.Option3:SetScript("OnClick", function() ns.SetupLayout("dps") end)
 			PluginInstallFrame.Option3:SetText("DPS")
 		end,
 		[3] = function()
