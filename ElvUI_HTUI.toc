@@ -1,12 +1,14 @@
 ## Interface: 80000
 ## Author: HealTree
-## Version: 1.00
+## Version: 1.01
 ## Title: |cff1784d1ElvUI|r |cff4beb2cHTUI|r
-## Notes: "Hurray, its my ElvUI Layout.
+## Notes: "Healtree UI."
 ## RequiredDeps: ElvUI
 ## DefaultState: enabled
 
-layout.lua
+core.lua
 tags.lua
 sharedmedia.lua
 modules/unitframes.lua
+modules/layout.lua
+modules/tracker.lua
