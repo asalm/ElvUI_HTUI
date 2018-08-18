@@ -1,5 +1,5 @@
 # ElvUI_HTUI
-###### v1.0 // BfA 8.0
+###### v1.01 // BfA 8.0
 
 A minimalistic Standalone ElvUI Layout for Healers and Casters.. probably
 
